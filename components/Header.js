@@ -23,29 +23,39 @@ function Header() {
                 
                 {/* Search Bar */}
                 <div className="
-                    
-                    justify-center
-                    flex ml-2 
-                    items-center 
-                    rounded-full 
-                    bg-gray-100 
-                    p-2">
+                    flex justify-center
+                    flex-grow">
 
-                    <SearchIcon className="h-6 text-gray-600"/>
-                
-                    <input className="
+                    <div className="
+                        flex
+                        ml-2 
                         
-                        md:inline-flex ml-2 
-                        items-center 
-                        bg-transparent 
-                        outline-none
-                        placeholder-gray-500
-                        flex-shrink"
-                        type='text' placeholder='Search here' />
-                
+                        rounded-full 
+                        bg-gray-100 
+                        p-2">
+
+                        <SearchIcon className="h-6 text-gray-600"/>
+                    
+                        <input className="
+                            hidden
+                            md:inline-flex ml-2 
+                            items-center 
+                            bg-transparent 
+                            outline-none
+                            placeholder-gray-500
+                            flex-shrink"
+                            type='text' placeholder='Search here' />
+                    
+                    </div>
                 </div>
 
-                <h1 className="ml-2 font-medium flex justify-end">Restaurant POS</h1>
+                <h1 className="
+                    ml-2 font-medium 
+                    flex justify-end 
+                    hover:text-red-500
+                    cursor-pointer">
+                        Log Out
+                </h1>
 
 
                 
