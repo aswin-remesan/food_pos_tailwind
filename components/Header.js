@@ -20,13 +20,11 @@ function Header() {
                     width="40"
                     layout="fixed"/>
                 
-
-                <h1 className="ml-2 font-medium flex justify-center flex-grow">Restaurant POS</h1>
-
-
+                
                 {/* Search Bar */}
                 <div className="
-                    justify-end
+                    
+                    justify-center
                     flex ml-2 
                     items-center 
                     rounded-full 
@@ -44,7 +42,13 @@ function Header() {
                         placeholder-gray-500
                         flex-shrink"
                         type='text' placeholder='Search here' />
+                
                 </div>
+
+                <h1 className="ml-2 font-medium flex justify-end">Restaurant POS</h1>
+
+
+                
 
             </div>
 

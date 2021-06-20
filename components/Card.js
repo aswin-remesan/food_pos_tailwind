@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 
-function Card({name, image}) {
+function Card({name, image, price}) {
     return (
         <div className="
             bg-white
@@ -19,14 +19,18 @@ function Card({name, image}) {
                     relative
                     h-56
                     ">
-                    <Image classname="absolute rounded-full z-50" 
+                    <Image classname="rounded-xl z-50" 
                         src={image}
                         objectFit="cover"
                         layout="fill"
                     />
                 </div>
             )}
-            <h1 className="mt-5">{name}</h1>
+            <div className="flex items-center mt-5">
+                <h1 className="flex items-center">{name}</h1>
+                <p className="text-xs text-gray-500 flex flex-grow justify-end items-center">{price} AED</p>
+            </div>
+
         </div>
     )
 }
