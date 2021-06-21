@@ -4,7 +4,7 @@ import {PlusCircleIcon, MinusCircleIcon} from "@heroicons/react/outline"
 
 function CartItem({image, name, price, quantity}) {
 
-    const ItemPrice = price * quantity;
+    const ItemPrice = price * quantity; //item final price
     
 
     return (
@@ -48,7 +48,7 @@ function CartItem({image, name, price, quantity}) {
                     
                 </div>
 
-                <div className="text-sm flex flex-grow justify-end">{ItemPrice} AED</div>
+                <div className="text-sm flex flex-grow justify-end">+{ItemPrice} AED</div>
             </div>
             
             
