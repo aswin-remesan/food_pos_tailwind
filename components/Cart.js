@@ -31,9 +31,13 @@ function Cart() {
                 {/* Body of cart */}
                 <div className="p-5 grid grid-cols-1 gap-5">
 
-                    <CartItem image="/img/Mains/lasagna.jpg" name="Lasagna" price="8"/>
-                    <CartItem image="/img/Mains/macaroni.jpg" name="Macaroni" price="15"/>
-                    <CartItem image="/img/Mains/sushi.jpg" name="Sushi" price="34"/>
+                    <CartItem image="/img/Mains/lasagna.jpg" name="Lasagna" price={8} quantity={2}/>
+                    <CartItem image="/img/Mains/macaroni.jpg" name="Macaroni" price={15} quantity={1}/>
+                    <CartItem image="/img/Mains/sushi.jpg" name="Sushi" price={34} quantity={5}/>
+                </div>
+
+                <div className="border-t-2">
+                    Last Element
                 </div>
 
 
