@@ -17,7 +17,7 @@ function Header() {
           src="/favicon.png"
           height="40"
           width="40"
-          alt="Logo"
+          alt=""
         />
 
         {/* Search Bar */}

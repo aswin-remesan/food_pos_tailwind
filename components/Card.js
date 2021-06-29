@@ -13,16 +13,15 @@ function Card({ name, image, price }) {
             shadow-md
             "
     >
-      {image && (
-        <Image
-          className="rounded-xl"
-          src={image}
-          alt={name}
-          height={1080}
-          width={1920}
-          layout="responsive"
-        />
-      )}
+      <Image
+        className="rounded-xl"
+        src={image}
+        alt={name}
+        height={1080}
+        width={1920}
+        layout="responsive"
+      />
+
       <div className="flex items-center mt-2 lg:mt-5">
         <h1 className="flex items-center">{name}</h1>
         <p className="text-xs text-gray-500 flex flex-grow justify-end items-center">
