@@ -14,8 +14,8 @@ function Card({ name, image, price }) {
     >
       <Image
         className="rounded-xl"
-        src={image}
         alt={name}
+        src={image}
         height={1080}
         width={1920}
         layout="responsive"

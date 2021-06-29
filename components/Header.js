@@ -12,13 +12,7 @@ function Header() {
     >
       {/* Logo */}
       <div className="flex items-center">
-        <Image
-          className="object-contain"
-          src="/favicon.png"
-          height="40"
-          width="40"
-          alt="LOGO"
-        />
+        <Image alt="LOGO" src="/favicon.png" height="40" width="40" />
 
         {/* Search Bar */}
         <div
