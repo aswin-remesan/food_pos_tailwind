@@ -14,9 +14,14 @@ function CartItem({ image, name, price, quantity }) {
             "
     >
       {/* Image of item */}
-      {image && (
-        <Image className="rounded-l-xl " src={image} width={90} height={70} />
-      )}
+
+      <Image
+        className="rounded-l-xl "
+        src={image}
+        width={90}
+        height={70}
+        alt={name}
+      />
 
       {/* item name and price */}
       <div className="rounded-r-xl">

@@ -20,6 +20,7 @@ function Nav() {
       <div>
         {Object.entries(requests).map(([key, { title, url, icon }]) => (
           <div
+            key={key}
             className="
                 flex flex-col
                 text-[0.6rem]
@@ -41,7 +42,7 @@ function Nav() {
                 cursor-pointer"
             onClick={() => router.push(`/?category=${key}`)}
           >
-            <Image src={icon} width={30} height={30} />
+            <Image key={key} src={icon} width={30} height={30} alt={key} />
 
             <h2
               key={key}
