@@ -14,7 +14,7 @@ function Header() {
       <div className="flex items-center">
         <Image
           className="object-contain"
-          src="/favicon.png"
+          src="/icons/mains.svg"
           height="40"
           width="40"
           alt="Logo"
